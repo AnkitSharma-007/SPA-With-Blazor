@@ -1,0 +1,3 @@
+<linker>
+<assembly fullname="BlazorSPA.Client" />
+</linker>
