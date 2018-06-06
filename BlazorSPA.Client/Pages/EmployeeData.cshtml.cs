@@ -26,19 +26,14 @@ namespace BlazorSPA.Client.Pages
         protected Employee emp = new Employee();
         protected string title { get; set; }
 
-        protected override async Task OnInitAsync()
-        {
-            await FetchEmployee();
-        }
-        protected async Task FetchEmployee()
-        {
-            title = "Employee Data";
-            empList = await Http.GetJsonAsync<List<Employee>>("api/Employee/Index");
-        }
-
         protected override async Task OnParametersSetAsync()
         {
-            if (action == "create")
+            if (action == "fetch")
+            {
+                await FetchEmployee();
+                this.StateHasChanged();
+            }
+            else if (action == "create")
             {
                 title = "Add Employee";
                 emp = new Employee();
@@ -58,6 +53,12 @@ namespace BlazorSPA.Client.Pages
             }
         }
 
+        protected async Task FetchEmployee()
+        {
+            title = "Employee Data";
+            empList = await Http.GetJsonAsync<List<Employee>>("api/Employee/Index");
+        }
+
         protected async Task CreateEmployee()
         {
             if (emp.EmployeeId != 0)
@@ -69,23 +70,18 @@ namespace BlazorSPA.Client.Pages
                 await Http.SendJsonAsync(HttpMethod.Post, "/api/Employee/Create", emp);
             }
             UriHelper.NavigateTo("/employee/fetch");
-            await FetchEmployee();
-            this.StateHasChanged();
         }
 
         protected async Task DeleteEmployee()
         {
             await Http.DeleteAsync("api/Employee/Delete/" + Convert.ToInt32(paramEmpID));
             UriHelper.NavigateTo("/employee/fetch");
-            await FetchEmployee();
-            this.StateHasChanged();
         }
 
         protected void Cancel()
         {
             title = "Employee Data";
             UriHelper.NavigateTo("/employee/fetch");
-            this.StateHasChanged();
         }
     }
 }
