@@ -14,6 +14,7 @@ namespace BlazorSPA.Server.Controllers
     {
         EmployeeDataAccessLayer objemployee = new EmployeeDataAccessLayer();
 
+        // To Fetch all employee records
         [HttpGet]
         [Route("api/Employee/Index")]
         public IEnumerable<Employee> Index()
@@ -21,6 +22,7 @@ namespace BlazorSPA.Server.Controllers
             return objemployee.GetAllEmployees();
         }
 
+        // To Create a new employee record
         [HttpPost]
         [Route("api/Employee/Create")]
         public void Create([FromBody] Employee employee)

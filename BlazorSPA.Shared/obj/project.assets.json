@@ -3011,11 +3011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj",
+      "projectUniqueName": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj",
       "projectName": "BlazorSPA.Shared",
-      "projectPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj",
+      "projectPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj",
       "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Shared\\obj\\",
+      "outputPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -12993,11 +12993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Server\\BlazorSPA.Server.csproj",
+      "projectUniqueName": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Server\\BlazorSPA.Server.csproj",
       "projectName": "BlazorSPA.Server",
-      "projectPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Server\\BlazorSPA.Server.csproj",
+      "projectPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Server\\BlazorSPA.Server.csproj",
       "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Server\\obj\\",
+      "outputPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13016,11 +13016,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Client\\BlazorSPA.Client.csproj": {
-              "projectPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Client\\BlazorSPA.Client.csproj"
+            "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Client\\BlazorSPA.Client.csproj": {
+              "projectPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Client\\BlazorSPA.Client.csproj"
             },
-            "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj": {
-              "projectPath": "C:\\Users\\ankit\\source\\repos\\BlazorSPA\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj"
+            "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj": {
+              "projectPath": "F:\\Projects\\SPA-With-Blazor\\BlazorSPA.Shared\\BlazorSPA.Shared.csproj"
             }
           }
         }
