@@ -40,7 +40,7 @@ namespace BlazorSPA.Server.Controllers
             return objemployee.GetEmployeeData(id);
         }
 
-        // Edit an existing employee record
+        // Edit an existing employee records
         [HttpPut]
         [Route("api/Employee/Edit")]
         public void Edit([FromBody]Employee employee)
