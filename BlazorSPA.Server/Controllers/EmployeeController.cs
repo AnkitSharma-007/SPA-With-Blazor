@@ -31,6 +31,7 @@ namespace BlazorSPA.Server.Controllers
                 objemployee.AddEmployee(employee);
         }
 
+        // To fetch the details of a particular employee
         [HttpGet]
         [Route("api/Employee/Details/{id}")]
         public Employee Details(int id)
