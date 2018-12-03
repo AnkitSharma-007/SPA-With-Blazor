@@ -18,7 +18,7 @@ namespace BlazorSPA.Shared.Models
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {sss
+        {
             modelBuilder.Entity<Employee>(entity =>
             {
                 entity.Property(e => e.City)
