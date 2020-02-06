@@ -1,0 +1,166 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Client\\BlazorSPA.Client.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Client\\BlazorSPA.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Client\\BlazorSPA.Client.csproj",
+        "projectName": "BlazorSPA.Client",
+        "projectPath": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Client\\BlazorSPA.Client.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\BlazorSPA.Shared.csproj": {
+                "projectPath": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\BlazorSPA.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Blazor": {
+              "target": "Package",
+              "version": "[3.2.0-preview1.20073.1, )"
+            },
+            "Microsoft.AspNetCore.Blazor.Build": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0-preview1.20073.1, )"
+            },
+            "Microsoft.AspNetCore.Blazor.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0-preview1.20073.1, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.2.0-preview1.20073.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\BlazorSPA.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\BlazorSPA.Shared.csproj",
+        "projectName": "BlazorSPA.Shared",
+        "projectPath": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\BlazorSPA.Shared.csproj",
+        "packagesPath": "C:\\Users\\ankit\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\BlazorUpdates\\SPA-With-Blazor\\BlazorSPA\\BlazorSPA\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ankit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "NETStandard.Library.Ref",
+              "version": "[2.1.0, 2.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

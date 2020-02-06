@@ -1,0 +1,130 @@
+﻿@inherits EmployeeDataModel
+@page "/employee/{action}/{paramEmpID:int}"
+@page "/employee/{action}"
+
+<h1>@Title</h1>
+
+@if (Action == "fetch")
+{
+    <p>
+        <a href="/employee/create">Create New</a>
+    </p>
+}
+
+@if (Action == "create" || Action == "edit")
+{
+    <EditForm Model="@emp" OnValidSubmit="CreateEmployee">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <table class="form-group">
+            <tr>
+                <td>
+                    <label for="Name" class="control-label">Name</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" @bind="emp.Name" />
+                </td>
+                <td width="20">&nbsp;</td>
+                <td>
+                    <label for="Department" class="control-label">Department</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" @bind="emp.Department" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Gender" class="control-label">Gender</label>
+                </td>
+                <td>
+                    <select asp-for="Gender" class="form-control" @bind="emp.Gender">
+                        <option value="">-- Select Gender --</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+                <td width="20">&nbsp;</td>
+                <td>
+                    <label for="City" class="control-label">City</label>
+                </td>
+                <td>
+                    <input type="text" class="form-control" @bind="emp.City" />
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </td>
+                <td></td>
+                <td width="20">&nbsp;</td>
+                <td>
+                    <button class="btn btn-light" @onclick="Cancel">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </EditForm>
+}
+else if (Action == "delete")
+{
+    <div class="col-md-4">
+        <table class="table">
+            <tr>
+                <td>Name</td>
+                <td>@emp.Name</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>@emp.Gender</td>
+            </tr>
+            <tr>
+                <td>Department</td>
+                <td>@emp.Department</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>@emp.City</td>
+            </tr>
+        </table>
+        <div class="form-group">
+            <button class="btn btn-danger" @onclick="(async () => await DeleteEmployee())">Delete</button>
+            <button class="btn btn-light" @onclick="Cancel">Cancel</button>
+        </div>
+    </div>
+}
+
+@if (empList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var emp in empList)
+            {
+                <tr>
+                    <td>@emp.EmployeeId</td>
+                    <td>@emp.Name</td>
+                    <td>@emp.Gender</td>
+                    <td>@emp.Department</td>
+                    <td>@emp.City</td>
+                    <td>
+
+                        <a href='/employee/edit/@emp.EmployeeId'>Edit</a>  |
+                        <a href='/employee/delete/@emp.EmployeeId'>Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
