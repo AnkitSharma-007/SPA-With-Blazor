@@ -4,7 +4,7 @@ In this article, we are going to create a Single Page Application (SPA) using Ra
 
 We will be using Visual Studio 2019 and SQL Server 2017.
 
-Take a look at the final application.
+# Demo
 
 ![Alt Text](https://github.com/AnkitSharma-007/SPA-With-Blazor/blob/master/Output/BlazorSPA.gif)
 
