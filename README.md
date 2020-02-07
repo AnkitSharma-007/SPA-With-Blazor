@@ -5,7 +5,7 @@ We will be using Visual Studio 2017 and SQL Server 2014.
 
 Take a look at the final application.
 
-![Alt Text](https://i2.wp.com/ankitsharmablogs.com/wp-content/uploads/2018/05/BlazorWithRazor.gif)
+![Alt Text](https://github.com/AnkitSharma-007/SPA-With-Blazor/blob/master/Output/BlazorSPA.gif)
 
 # Read the full article at
 
